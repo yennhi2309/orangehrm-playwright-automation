@@ -124,61 +124,7 @@ public class UserLifeCycleTest extends BaseTest {
 
         log.info("===============VERIFY LOGIN FAIL===============");
         assertThat(loginPage.isInvalidCredentialErrorDisplayed()).isTrue();
-
-//        String emId = "EMP-0460";
-//
-//        log.info("===============NAVIGATE TO PIM PAGE===============");
-//        dashboardPage.navigateToModule("PIM");
-//
-//        log.info("===============SEARCH===============");
-//        employeeListPage.searchByEmployeeId(emId);
-//        TableUtils table = new TableUtils(page, "div.oxd-table");
-//
-////        log.info("===============VERIFY USERNAME IS FILTERED CORRECTLY===============");
-////        List<String> values = table.getAllValuesInColumn("Id");
-////        log.info("Values: {}", values);
-////        assertThat(employeeListPage.verifyUsernameFilteredCorrectly(values, "EMP-0373")).isTrue();
-//
-//        log.info("===============CLICK ON EDIT===============");
-//        table.clickActionButtonByRowValues(Map.of("Id", emId), "Edit");
-//
-//        log.info("===============GO TO PERSONAL DETAILS PAGE===============");
-//        employeeListPage.goToModule("Personal Details");
-//
-//        log.info("===============VERIFY ALL PERSONAL DETAIL FIELDS ARE SAVED CORRECTLY===============");
-//        assertThat(employeeListPage.verifyPersonalDetailFieldsAreSavedCorrectly(EmployeeData.inputPersonalDetails, EmployeeData.ddlPersonalDetails, EmployeeData.gender)).isTrue();
-//
-//        log.info("===============GO TO CONTACT DETAILS PAGE===============");
-//        employeeListPage.goToModule("Contact Details");
-//
-//        log.info("===============VERIFY ALL CONTACT DETAIL FIELDS ARE SAVED CORRECTLY===============");
-//        assertThat(employeeListPage.verifyContactDetailFieldsAreSavedCorrectly(EmployeeData.inputContactDetails, EmployeeData.ddlContactDetails)).isTrue();
-//
-//        log.info("===============NAVIGATE TO EMPLOYEE LIST PAGE===============");
-//        dashboardPage.navigateToModule("Employee List");
-//
-//        log.info("===============SEARCH===============");
-//        employeeListPage.searchByEmployeeId(emId);
-//
-//        log.info("===============DELETE===============");
-//        table.clickActionButtonByRowValues(Map.of("Id", emId), "Delete");
-//
-//        log.info("===============CONFIRM DELETE===============");
-//        employeeListPage.deleteEmployee();
-//
-//        log.info("===============VERIFY DELETE EMPLOYEE SUCCESSFULLY===============");
-//        employeeListPage.searchByEmployeeId(emId);
-//        assertThat(table.verifyRowsCountMatches(0)).isTrue();
-//        ScreenshotHelper.takeScreenshot(page);
-//
-//        log.info("===============LOGOUT===============");
-//        dashboardPage.logout();
-//
-//        log.info("===============LOGIN BY EMPLOYEE===============");
-//        loginPage.login(EmployeeData.loginDetails.get("Username"), EmployeeData.loginDetails.get("Password"));
-//
-//        log.info("===============VERIFY LOGIN FAIL===============");
-//        assertThat(loginPage.isInvalidCredentialErrorDisplayed()).isTrue();
+        
     }
 
 }
